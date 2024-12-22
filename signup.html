@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Home</title>
+    <!-- Favicon -->
+    <link rel="icon" href="Online Flat Rent Agency/LOGO/Logo-removebg-preview.png" type="image/png">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        /* Ensure the body and html take full height */
+        html, body {
+            height: 100%;
+            background-color: #f7f9fc;
+        }
+
+        .card {
+            border-radius: 15px;
+            
+        }
+
+        header {
+            background-color: #C2E8EC;
+            height: 100px;
+            position: fixed; /* Keeps the header fixed at the top */
+            top: 0; /* Aligns the header to the top of the viewport */
+            width: 100%; /* Ensures the header spans the full width */
+            z-index: 1000; /* Keeps the header above other elements */
+            padding: 1rem 300px;
+        }
+
+        header, footer {
+            padding: 1rem 300px;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer {
+            background-color: #A2D7E1;
+            padding: 1rem 300px;
+            text-align: center;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- Header Section -->
+        <header class="text-white">
+            <div class="d-flex justify-content-between align-items-center">
+                <img src="Online Flat Rent Agency/Picture/Logo.png" alt="Flat Rent Agency Logo" style="max-height: 60px;">
+                <nav class="d-flex gap-3">
+                    <a href="index.html" class="btn btn-outline-dark">Home</a>
+        
+                    <!-- Dropdown for Area -->
+                    <div class="dropdown">
+                        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="areaDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Area
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="areaDropdown">
+                            <li><a class="dropdown-item" href="gulshan.html">Gulshan</a></li>
+                            <li><a class="dropdown-item" href="dhanmondi.html">Dhanmondi</a></li>
+                            <li><a class="dropdown-item" href="uttara.html">Uttara</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Dropdown for Category -->
+                    <div class="dropdown">
+                        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="categoryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Category
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                            <li><a class="dropdown-item" href="spacious.html">Spacious Apartment</a></li>
+                            <li><a class="dropdown-item" href="affordable.html">Affordable Apartment</a></li>
+                            <li><a class="dropdown-item" href="cozy .html">Cozy Apartment</a></li>
+                        </ul>
+                    </div>
+        
+                    <a href="addpost.html" class="btn btn-outline-dark">Add Post</a>
+                    <a href="login.html" class="btn btn-outline-dark">Log In</a>
+                    <a href="signup.html" class="btn btn-outline-dark">Sign Up</a>
+                    <a href="profile.html" class="btn btn-outline-dark">Profile</a>
+                </nav>
+            </div>
+        </header>
+        
+
+        <!-- Main Content Section -->
+        <main class="container my-5 d-flex justify-content-center">
+            <div class="card p-4" style="width: 100%;margin-top: 100px; max-width: 900px;">
+                <h2 class="text-center mb-4">Sign Up</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="address" placeholder="Enter your address" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nid" class="form-label">NID Number</label>
+                        <input type="text" class="form-control" id="nid" placeholder="Enter your NID number" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="confirmPassword" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password" required>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+                    </div>
+                </form>
+                <p class="text-center mt-3">Already have an account? <a href="login.html">Log In</a></p>
+            </div>
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="container-fluid text-center text-md-start d-md-flex justify-content-between">
+                <div class="mb-3 mb-md-0">
+                    <h3 style="color: #5c44a3; font-family: Inknut Antiqua;font-weight: bold;">Contact Information</h3>
+                    <p style="text-align: center;">
+                        Address: 123 Main Road, Dhaka<br>
+                        Email: <a href="mailto:support@yourhome.com">support@yourhome.com</a><br>
+                        Phone: +880 123 456 789
+                    </p>
+                </div>
+                <div>
+                    <h3 style="color: #5c44a3; font-family: Inknut Antiqua;font-weight: bold;text-align: center ">About Us</h3>
+                    <p style="text-align: center ">
+                        We make renting flats easy and hassle-free.<br> With transparent listings and reliable support,<br> finding your perfect home is just a click away!
+                    </p>
+                </div>
+                <div>
+                    <h3 style="color: #5c44a3; font-family: Inknut Antiqua;font-weight: bold;margin-left: 30px;">Follow Us</h3>
+                    <p style="text-align: center; color: #3a3b3b;">
+                        <a href="https://www.facebook.com" target="_blank" class="text-dark me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="https://twitter.com" target="_blank" class="text-dark me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="https://www.instagram.com" target="_blank" class="text-dark me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank" class="text-dark"><i class="fab fa-linkedin fa-2x"></i></a>
+                    </p>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <img src="Online Flat Rent Agency/Picture/Logo.png" alt="Flat Rent Agency Logo" style="max-height: 80px;">
+                <p class="mb-0">&copy; 2024 Flat Rent Agency. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
